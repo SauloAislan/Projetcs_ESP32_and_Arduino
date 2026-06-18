@@ -15,6 +15,7 @@
 Embedded systems developer and technical writer with **5+ years** building and documenting IoT projects. All projects were published as full tutorials on [Blog Eletrogate](https://blog.eletrogate.com), Brazil's largest electronics community — covering hardware design, firmware development, industrial communication protocols, and PCB manufacturing.
 
 **Core Skills:**
+
 - Microcontrollers: Arduino (Uno, Nano, Mega), ESP8266, ESP32, Raspberry Pi Pico
 - Wireless: LoRa 915MHz, Wi-Fi, MQTT broker integration
 - Industrial protocols: RS-485 (half-duplex, full-duplex), RS-232/TTL
@@ -97,14 +98,13 @@ Hardware    : PCB Design, SMD Soldering, 3D Printing, Aluminum Profiles
 
 ## Contact
 
-- **Technical Blog:** [blog.eletrogate.com](https://blog.eletrogate.com) — 23 published tutorials
-- **Email:** sauloaislan17@gmail.com
+- **Email:** <aislansaulo@gmail.com>
 
 ---
 
 # Portfólio de Sistemas Embarcados e IoT — Saulo Aislan
 
-Desenvolvedor de sistemas embarcados e redator técnico com **mais de 5 anos** construindo e documentando projetos IoT. Todos os projetos foram publicados como tutoriais completos no [Blog Eletrogate](https://blog.eletrogate.com).
+Desenvolvedor de sistemas embarcados e redator técnico com **mais de 5 anos** construindo e documentando projetos IoT.
 
 **Habilidades principais:** Arduino, ESP8266, ESP32, LoRa, MQTT, RS-485, I2C, SPI, PlatformIO, EasyEDA, soldagem SMD, impressão 3D.
 
