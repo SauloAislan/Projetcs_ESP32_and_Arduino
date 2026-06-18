@@ -1,76 +1,111 @@
-# Portfólio de Projetos – Saulo Aislan
+# IoT & Embedded Systems Portfolio — Saulo Aislan
 
-Coleção de projetos de eletrônica e sistemas embarcados publicados no [Blog Eletrogate](https://blog.eletrogate.com), desenvolvidos entre 2021 e 2026.
+> **Firmware Engineer | IoT Developer | Embedded Systems | Arduino | ESP32 | LoRa | MQTT | RS-485 | PCB Design**
 
-## Sobre
+[![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=arduino&logoColor=white)](https://www.arduino.cc/)
+[![ESP32](https://img.shields.io/badge/ESP32-red?style=flat)](https://www.espressif.com/)
+[![ESP8266](https://img.shields.io/badge/ESP8266-blue?style=flat)](https://www.espressif.com/)
+[![MQTT](https://img.shields.io/badge/MQTT-Protocol-purple?style=flat)](https://mqtt.org/)
+[![PlatformIO](https://img.shields.io/badge/PlatformIO-orange?style=flat&logo=platformio)](https://platformio.org/)
 
-Engenheiro e entusiasta de IoT, sistemas embarcados e automação. Experiência com **Arduino**, **ESP8266**, **ESP32**, comunicação industrial (**RS-485**, **LoRa**, **MQTT**), impressão 3D, design de PCB e projetos de energia solar.
+---
 
-## Projetos
+## About
 
-### 2021
+Embedded systems developer and technical writer with **5+ years** building and documenting IoT projects. All projects were published as full tutorials on [Blog Eletrogate](https://blog.eletrogate.com), Brazil's largest electronics community — covering hardware design, firmware development, industrial communication protocols, and PCB manufacturing.
 
-| Projeto | Tecnologias | Artigo |
+**Core Skills:**
+- Microcontrollers: Arduino (Uno, Nano, Mega), ESP8266, ESP32, Raspberry Pi Pico
+- Wireless: LoRa 915MHz, Wi-Fi, MQTT broker integration
+- Industrial protocols: RS-485 (half-duplex, full-duplex), RS-232/TTL
+- Sensors: DHT11/22, BMP280, HC-SR04, inductive PNP/NPN, pH sensor, flow sensor, rain sensor
+- Actuators: stepper motors (DRV8825, A4988), DC motors, servo motors, relays
+- PCB Design: EasyEDA, Gerber generation, SMD soldering (paste + hot air)
+- Platforms: Arduino IDE, PlatformIO (VS Code), Processing, Wokwi Simulator
+
+---
+
+## Projects
+
+### 🔗 Wireless & IoT
+
+| Repository | Description | Stack |
 |---|---|---|
-| [Monitoramento de Temperatura com Heltec ESP32 LoRa](./2021_monitoramento-temperatura-heltec-esp32-lora/) | ESP32, LoRa 915MHz, DHT11, OLED | [Leia aqui](https://blog.eletrogate.com/monitoramento-remoto-de-temperatura-utilizando-a-heltec-esp32-lora/) |
+| [lora-temperature-monitoring-esp32](./lora-temperature-monitoring-esp32/) | Long-range P2P temperature monitoring over LoRa 915MHz | ESP32, LoRa, DHT11, OLED |
+| [esp32-cam-remote-access-ngrok](./esp32-cam-remote-access-ngrok/) | Live MJPEG video stream accessible globally via Ngrok tunnel | ESP32-CAM, OV2640, Ngrok |
+| [cat-fountain-esp8266-wifi](./cat-fountain-esp8266-wifi/) | Wi-Fi controlled water pump with async web interface | ESP8266, AsyncWebServer, Relay |
+| [weather-station-esp8266](./weather-station-esp8266/) | Multi-sensor local weather station with OLED display | ESP8266, DHT11, BMP280, OLED |
+| [esp8266-deep-sleep-mqtt](./esp8266-deep-sleep-mqtt/) | Ultra-low-power IoT node: reads sensor → publishes MQTT → deep sleeps | ESP8266, MQTT, TMP36 |
+| [wokwi-simulator-esp32-arduino-rpi-pico](./wokwi-simulator-esp32-arduino-rpi-pico/) | Three simulated projects: Piano (Arduino), 7-seg counter (Pico), MQTT (ESP32) | Arduino, MicroPython, MQTT |
 
-### 2022
+### 📡 Industrial Communication
 
-| Projeto | Tecnologias | Artigo |
+| Repository | Description | Stack |
 |---|---|---|
-| [Sleep Modes no ESP8266](./2022_esp8266-sleep-modes/) | ESP8266, MQTT, TMP36, Deep Sleep | [Leia aqui](https://blog.eletrogate.com/economizando-energia-sleep-modes-no-esp8266/) |
-| [Simulação com Wokwi](./2022_simulando-esp32-arduino-raspberry-wokwi/) | Arduino, ESP32, Raspberry Pi Pico, MQTT, MicroPython | [Leia aqui](https://blog.eletrogate.com/simulando-esp32-arduino-e-raspberry-pi-com-o-wokwi/) |
-| [Levitação Ultrassônica](./2022_levitacao-ultrassonica-arduino/) | Arduino Nano, HC-SR04, H-Bridge, AVR Timers | [Leia aqui](https://blog.eletrogate.com/levitacao-ultrassonica-com-arduino/) |
-| [Radar Ultrassônico](./2022_radar-sonar-ultrasonico/) | Arduino Nano, HC-SR04, Servo, Processing | [Leia aqui](https://blog.eletrogate.com/radar-sonar-ultrassonico-para-seus-projetos/) |
-| [Bebedouro para Gatos](./2022_fonte-bebedouro-gatos-esp8266/) | ESP8266, Relé, Web Server, AsyncWebServer | [Leia aqui](https://blog.eletrogate.com/fonte-bebedouro-para-gatos-com-esp8266/) |
-| [Estação Meteorológica](./2022_estacao-meteorologica-esp8266/) | ESP8266, DHT11, BMP280, OLED, Sensor de Chuva | [Leia aqui](https://blog.eletrogate.com/estacao-meteorologica-residencial-com-esp8266/) |
-| [Robô Otto](./2022_robo-otto-arduino-nano/) | Arduino Nano, Servos, HC-SR04, 3D Print | [Leia aqui](https://blog.eletrogate.com/montando-seu-robo-otto-com-arduino-nano/) |
-| [Comunicação RS-485 Half-Duplex](./2022_comunicacao-half-duplex-rs485/) | Arduino Uno/Mega, RS-485, MAX485 | [Leia aqui](https://blog.eletrogate.com/comunicacao-half-duplex-com-rs-485/) |
-| [Comunicação USB-RS485](./2022_comunicacao-usb-rs485/) | Arduino, RS-485, LCD I2C | [Leia aqui](https://blog.eletrogate.com/comunicacao-com-conversor-usb-rs485/) |
-| [ESP-WROOM-32 com Adaptador](./2022_esp-wroom-32-adaptador/) | ESP32, CP2102, Soldagem SMD | [Leia aqui](https://blog.eletrogate.com/esp-wroom-32-com-adaptador-esp32/) |
-| [ESP32-CAM com Ngrok](./2022_esp32-cam-ngrok/) | ESP32-CAM, OV2640, Ngrok, MJPEG Stream | [Leia aqui](https://blog.eletrogate.com/esp32-cam-acessado-remotamente-com-ngrok/) |
+| [rs485-half-duplex-arduino](./rs485-half-duplex-arduino/) | Bidirectional RS-485 between Arduino Uno and Mega; pot controls remote LED | RS-485, MAX485, SoftwareSerial |
+| [rs485-usb-pc-to-arduino](./rs485-usb-pc-to-arduino/) | PC sends commands via USB-RS485; Arduino controls LCD + LED | RS-485, LCD I2C, USB-RS485 |
 
-### 2024
+### 🤖 Robotics & Motion
 
-| Projeto | Tecnologias | Artigo |
+| Repository | Description | Stack |
 |---|---|---|
-| [Monitor de pH](./2024_monitor-ph-esp32/) | ESP32, ADS1115, PH-4502C, PlatformIO | [Leia aqui](https://blog.eletrogate.com/monitorando-o-ph-de-liquidos-com-esp32-e-sensor-ph-4502c/) |
-| [Árvore de Natal com LEDs RGB](./2024_arvore-natal-leds-rgb/) | LEDs RGB automáticos, Transistores, Circuito RC | [Leia aqui](https://blog.eletrogate.com/como-montar-uma-arvore-de-natal-com-leds-rgb/) |
-| [Adaptadores SMD para DIP](./2024_adaptadores-smd-para-dip/) | SMD, Soldagem, LM393 | [Leia aqui](https://blog.eletrogate.com/dicas-para-usar-os-adaptadores-smd-para-dip-em-seus-projetos/) |
+| [otto-robot-arduino-nano](./otto-robot-arduino-nano/) | Open-source biped robot with ultrasonic obstacle avoidance | Arduino Nano, SG90 Servo, HC-SR04 |
+| [ultrasonic-radar-arduino-processing](./ultrasonic-radar-arduino-processing/) | Rotating ultrasonic radar with real-time Processing visualization | Arduino, HC-SR04, Servo, Processing |
+| [ultrasonic-levitation-arduino](./ultrasonic-levitation-arduino/) | Acoustic levitation using 40kHz standing waves (AVR timer ISR) | Arduino Nano, HC-SR04, H-Bridge |
+| [drv8825-stepper-motor-driver-arduino](./drv8825-stepper-motor-driver-arduino/) | Full guide: DRV8825 with NEMA 17, microstepping 1/32 | Arduino, DRV8825, NEMA 17 |
+| [mini-conveyor-belt-object-counter](./mini-conveyor-belt-object-counter/) | Industrial mini conveyor with inductive sensor and LCD counter | Arduino, Inductive Sensor, DC Motor, 3D Print |
 
-### 2025
+### 🌱 Sensing & Measurement
 
-| Projeto | Tecnologias | Artigo |
+| Repository | Description | Stack |
 |---|---|---|
-| [Contador com Sensor Indutivo](./2025_contador-objetos-sensor-indutivo-lcd/) | ESP32, Sensor Indutivo PNP, LCD I2C | [Leia aqui](https://blog.eletrogate.com/contador-de-objetos-com-arduino-sensor-indutivo-e-display-lcd/) |
-| [Controle de Caixa D'Água](./2025_controle-caixa-dagua-arduino-nano/) | Arduino Nano, YF-S201, Relé, LCD I2C | [Leia aqui](https://blog.eletrogate.com/controle-inteligente-para-abastecimento-de-caixa-dagua-com-arduino-nano/) |
-| [Solda em Pasta e Soprador Térmico](./2025_solda-em-pasta-soprador-termico/) | Soldagem SMD, Hot Air, ESP32 | [Leia aqui](https://blog.eletrogate.com/aprenda-a-usar-a-solda-em-pasta-e-soprador-termico-soldando-um-esp32/) |
-| [Carregador Solar](./2025_carregador-solar-esp32/) | ESP32, TP4056, Painel Solar, Li-Ion | [Leia aqui](https://blog.eletrogate.com/carregador-de-bateria-solar-para-seu-projetos-com-esp32-ou-arduino/) |
-| [Guia de Botões e Chaves](./2025_guia-botoes-chaves-arduino-esp/) | Arduino, ESP32, Push Button, Switches | [Leia aqui](https://blog.eletrogate.com/guia-completo-sobre-botoes-e-chaves-para-arduino-e-esp/) |
-| [EasyEDA – Design de PCB](./2025_easyeda-guia-pcb/) | EasyEDA, PCB Design, JLCPCB, Gerber | [Leia aqui](https://blog.eletrogate.com/easyeda-o-guia-definitivo-para-projetar-pcbs/) |
+| [ph-monitor-esp32-ads1115](./ph-monitor-esp32-ads1115/) | High-precision pH monitor with 16-bit ADC for hydroponics | ESP32, ADS1115, PH-4502C, PlatformIO |
+| [object-counter-inductive-sensor-lcd](./object-counter-inductive-sensor-lcd/) | Metal object counter with PNP inductive sensor on production line | ESP32, Inductive PNP, LCD I2C |
+| [smart-water-tank-controller-arduino](./smart-water-tank-controller-arduino/) | Automated water tank filling with flow sensor and relay control | Arduino Nano, YF-S201, Relay, LCD |
 
-### 2026
+### ☀️ Energy & Hardware
 
-| Projeto | Tecnologias | Artigo |
+| Repository | Description | Stack |
 |---|---|---|
-| [Driver DRV8825 e Motor de Passo](./2026_driver-drv8825-motor-de-passo/) | Arduino, DRV8825, NEMA 17, Microstepping | [Leia aqui](https://blog.eletrogate.com/driver-drv8825-guia-completo-para-projetos-com-arduino-e-motor-de-passo/) |
-| [Mini Esteira Industrial](./2026_mini-esteira-industrial-contador/) | Arduino Uno, Sensor Indutivo, Motor DC, 3D Print, LCD | [Leia aqui](https://blog.eletrogate.com/mini-esteira-industrial-com-contador-de-objetos-e-display-lcd/) |
+| [solar-battery-charger-esp32](./solar-battery-charger-esp32/) | Standalone solar power system: panel → TP4056 → Li-Ion → ESP32 | ESP32, TP4056, Solar Panel |
+| [esp32-wroom-bare-module-programming](./esp32-wroom-bare-module-programming/) | Programming bare ESP32-WROOM-32D without dev board (CP2102) | ESP32, CP2102, SMD Soldering |
 
-## Tecnologias e Habilidades
+### 🛠 Guides & Tutorials
 
-**Microcontroladores:** Arduino (Uno, Nano, Mega), ESP8266, ESP32, Raspberry Pi Pico
+| Repository | Description | Stack |
+|---|---|---|
+| [easyeda-pcb-design-guide](./easyeda-pcb-design-guide/) | Complete PCB design workflow: schematic → routing → Gerber → JLCPCB | EasyEDA, PCB, Gerber, JLCPCB |
+| [smd-soldering-paste-hot-air](./smd-soldering-paste-hot-air/) | SMD soldering with paste and hot air station — step-by-step | Solder Paste, Hot Air, ESP32 SMD |
+| [smd-to-dip-adapter-soldering-guide](./smd-to-dip-adapter-soldering-guide/) | Using SMD-to-DIP adapters for breadboard prototyping | SMD, LM393, Soldering |
+| [buttons-switches-guide-arduino-esp](./buttons-switches-guide-arduino-esp/) | Complete guide: push buttons, rockers, limit switches, DIP switches | Arduino, ESP32, Pull-up/Pull-down |
+| [rgb-led-christmas-tree](./rgb-led-christmas-tree/) | No-microcontroller LED tree using RC timing circuits and transistors | RC Circuit, NPN Transistor, RGB LED |
 
-**Comunicação:** LoRa, MQTT, RS-485, I2C, SPI, SoftwareSerial, Wi-Fi, Ngrok
+---
 
-**Sensores:** DHT11/22, BMP280, HC-SR04, Sensor Indutivo, PH-4502C, TMP36, YF-S201, Sensor de Chuva
+## Tech Stack
 
-**Atuadores:** Servo Motor, Motor DC, Motor de Passo (NEMA 17), Relé, Buzzer
+```
+Languages   : C/C++ (Arduino), Python (MicroPython), Java (Processing)
+MCU         : Arduino Uno/Nano/Mega, ESP8266, ESP32, Raspberry Pi Pico
+Wireless    : LoRa 915MHz, Wi-Fi, MQTT
+Protocols   : RS-485, I2C, SPI, UART, SoftwareSerial
+Tools       : Arduino IDE, PlatformIO, EasyEDA, Wokwi, ngrok, Processing
+Hardware    : PCB Design, SMD Soldering, 3D Printing, Aluminum Profiles
+```
 
-**Hardware:** Design de PCB (EasyEDA), Impressão 3D, Soldagem SMD (pasta + soprador), Perfis de Alumínio
+---
 
-**Software:** Arduino IDE, PlatformIO, Processing (Java), MicroPython
+## Contact
 
-## Contato
+- **Technical Blog:** [blog.eletrogate.com](https://blog.eletrogate.com) — 23 published tutorials
+- **Email:** sauloaislan17@gmail.com
 
-- **Blog:** [blog.eletrogate.com](https://blog.eletrogate.com)
-- **E-mail:** sauloaislan17@gmail.com
+---
+
+# Portfólio de Sistemas Embarcados e IoT — Saulo Aislan
+
+Desenvolvedor de sistemas embarcados e redator técnico com **mais de 5 anos** construindo e documentando projetos IoT. Todos os projetos foram publicados como tutoriais completos no [Blog Eletrogate](https://blog.eletrogate.com).
+
+**Habilidades principais:** Arduino, ESP8266, ESP32, LoRa, MQTT, RS-485, I2C, SPI, PlatformIO, EasyEDA, soldagem SMD, impressão 3D.
+
+Veja a tabela de projetos acima — todos com código-fonte completo e README detalhado em inglês e português.
